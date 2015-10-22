@@ -1,0 +1,31 @@
+body{
+    
+    font-family: Arial, sans-serif;
+    line-height:1.2;
+    margin:0;
+    padding:5px 0 50px 0;
+    background-color: #E8E8E8;
+    border-bottom: 5px solid #000000;
+}
+.container{
+	width: 515px;
+	height: 755px;
+	padding: 30px 40px;
+	margin: 0 auto;
+	background-color: #FFFFFF;
+}
+.photo{
+	text-align: center;
+}
+.workExperience{
+	border-bottom: 1px solid #000000;
+}
+.education{
+	border-bottom: 1px solid #000000;
+}
+.contacts{
+	border-bottom: 1px solid #000000;
+}
+.hobby{
+	font-weight: bold;
+}
