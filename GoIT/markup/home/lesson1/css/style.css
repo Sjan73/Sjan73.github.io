@@ -12,7 +12,7 @@ body{
 	padding: 30px 40px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .photo{
 	text-align: center;
