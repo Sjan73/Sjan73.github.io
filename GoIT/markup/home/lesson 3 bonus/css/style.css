@@ -1,0 +1,51 @@
+body{
+   	background: #010101 url(../img/background.jpg) no-repeat center top fixed;
+	 -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.container{
+	width: 820px;
+	margin: 0 auto;
+}
+header{
+	display: inline-block;
+	padding-top: 90px;
+}
+.logo{
+	float: left;
+	margin-right: 440px;
+}
+.contacts{
+	float: right;
+	padding-top: 90px;
+}
+.contacts li:first-child{
+	font: 12px Tahoma, sans-serif;
+	color: #e6e6e6;
+}
+.contacts li a{
+	font: 10px Tahoma, sans-serif;
+	color: #e6e6e6;
+	text-decoration: none;
+}
+.country-list{
+	float: left;
+	width: 30.5%;
+	margin-right: 3.5%;
+	margin-bottom: 60px;
+	font: 15.5px Tahoma, sans-serif;
+	color: #e6e6e6;
+	text-align: center;
+}
+.country-list:nth-child(3n){
+	margin-right: 0;
+}
+footer{
+	clear: both;
+	padding: 120px 0 25px;
+	font: 11px Tahoma, sans-serif;
+	color: #e6e6e6;
+	text-align: center;
+}
