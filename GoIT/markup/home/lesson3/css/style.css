@@ -2,12 +2,12 @@
     font-family: 'Open Sans'; 
     src: url(../font/OpenSans-Regular.ttf); 
  }
- body{
- 	background: #f9f9f9 url(../img/container.png) no-repeat center center;
- }
 .wrapper{
 	width: 1060px;
+	height: 100%;
 	margin: 0 auto;
+	box-shadow: -10px 0 8px -8px #dbdbdb, 10px 0 8px -8px #dbdbdb;
+	background-color: #f9f9f9;
 }
 .container{
 	width: 965px;
@@ -17,72 +17,84 @@ header{
 	display: block;
 	padding-top: 50px;	
 }
-
 .nav{
 	margin-top: 30px;
-	background: #4f4f4f url(../img/panel.png) no-repeat left top;
-
+	background-color: #4f4f4f;
 }
 .nav li{
 	display: inline-block;
-	margin-right: 90px;
+	width: 100px;
+	margin-right: 20px;
 	padding: 10px 0;
-
+	text-align: center;
 }
 .nav li:first-child{
 	margin-left: 30px;
 }
 .nav li a{
+	text-shadow: 0.5px 0.866px 1px rgb( 0, 0, 0 );
 	font: 15px 'Open Sans', sans-serif; 
 	text-decoration: none;
 	color: #ececec;
 }	
-.nav li a:hover{
-	background: #404040 url(../img/line_right.png) no-repeat ;
-	padding: 10px 15px;
+.nav li:hover{
+	background-color: #404040;
+	border-left: 1px solid #838383;
+	border-right: 1px solid #838383;
 }  
 aside{
 	width: 240px;
 	float: left;
     display: block;
     margin-top: 40px;
-	background: #fff url(../img/table.png) no-repeat  left top;
 }
 .side-bar li{
 	padding: 12px 0 9px 25px;
+	border: 1px solid #c8c8c8;
 }
 .side-bar li a{
 	font: 14px 'Open Sans', sans-serif; 
 	text-decoration: none;
 	color: #adacac;
 }
+.side-bar li:hover{
+	background: #f9f9f9;
+}
 .side-bar li a:hover{
 	padding-left: 20px;
-	background: #f9f9f9;
 	color: #2c2c2c;
 }
 article{
 	float: right;
 	margin-top: 40px;
 	margin-bottom: 60px;
+	
+}
+article img{
+	padding: 50px 80px;
+	border: 1px solid #c8c8c8;
 }
 
 article p {
 	width: 630px;
 	margin-left: 20px;
 	margin-top: 30px;
+	line-height: 1.5;
 	font: 13px 'Open Sans', sans-serif; 
+	color: #2c2c2c;
 }
 footer{
-	display: block;
-	margin-bottom: 60px;
+	height: 40px;
 	clear:both;
-	background: #fff url(../img/footer.png) no-repeat  left bottom;
+	margin-bottom: 60px;
+	background-color: #e1e1e1;
 }
 .nav-2 li {
-	display: inline-block;
+	position: relative;
+	float: left;
 	margin-right: 90px;
 	padding: 10px 0;
+
 }
 .nav-2 li:first-child{
 	margin-left: 30px;
@@ -92,15 +104,14 @@ footer{
 	text-decoration: none;
 	color: #515151;
 }
-.nav-2 li:nth-child(4){
-	margin-right: 240px;
-}
-.nav-2 li:last-child{
-	font: 14px 'Open Sans', sans-serif; 
-	color: #515151;
-	margin-right: 0;
-}
 .nav-2 li a:hover{
 	border-bottom: 1px solid #515151;
 } 
+footer span{
+	float:right;
+	padding: 10px 25px 0 0;
+	font: 14px 'Open Sans', sans-serif; 
+	color: #515151;
+}
+
 
