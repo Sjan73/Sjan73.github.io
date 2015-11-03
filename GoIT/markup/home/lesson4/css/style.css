@@ -80,6 +80,16 @@ header{
 .nav li:hover{
 	background: #303030;
 }
+.triangles:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 17px;
+	right: 0;
+	width: 5px;
+	height: 6px;
+	background: url(../img/triangles.png);	
+}
 .nav .dropdown{
 display: none;
 position: absolute;
@@ -87,18 +97,16 @@ left: 0;
 top: 100%;
 width: 160px; 
 }
-.triangles{
-	background: url(../img/triangles.png) no-repeat center right;	
-}
 .nav li ul li {
 float: none;
 display: block;
+position: relative;
 background-color: rgb( 48, 48, 48 );
 line-height: 15px;
 -webkit-box-shadow: 2px 4px 5px 0 #000000;
   -moz-box-shadow: 2px 4px 5px 0 #000000;
 	 box-shadow: 2px 4px 5px 0 #000000;
-z-index: 28;
+z-index: 1;
 }
 .nav li ul li:hover{
 	background: #4c4949;
