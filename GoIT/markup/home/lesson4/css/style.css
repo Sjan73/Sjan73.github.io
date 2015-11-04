@@ -43,9 +43,17 @@ header{
 	color: #128aa7;
 	text-decoration: none;
 }
+.country img{
+	display: block;
+}
 .country li{
 	display: inline-block;
 	padding-right: 15px;
+	text-align: center;
+	font: 10px Tahoma, sans-serif;
+}
+.country li a{
+	color: #128aa7;
 }
 .h-image {
 	border-top: 2px solid #128aa7;
