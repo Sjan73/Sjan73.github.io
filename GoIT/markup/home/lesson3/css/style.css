@@ -24,8 +24,10 @@ header{
 }
 .nav{
 	margin-top: 30px;
-	background-color: #4f4f4f;
-}
+    background-image: -webkit-linear-gradient(left, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+	background-image: -o-linear-gradient(left, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+	background-image: linear-gradient(to right, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
+}		
 .nav li{
 	display: inline-block;
 	width: 100px;
@@ -51,7 +53,9 @@ header{
 	border-right: 1px solid #838383;
 } 
 .nav li:hover{
-	background-color: #404040;
+	background-image: -moz-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
 
@@ -82,11 +86,11 @@ aside{
 	background: #f9f9f9;
 }
 .side-bar .active a{
-	padding-left: 20px;
+	padding-left: 10px;
 	color: #2c2c2c;
 }
 .side-bar li a:hover{
-	padding-left: 20px;
+	padding-left: 10px;
 	color: #2c2c2c;
 }
 article{
@@ -138,3 +142,8 @@ footer span{
 	font: 14px 'Open Sans', sans-serif; 
 	color: #515151;
 }
+
+
+
+
+
