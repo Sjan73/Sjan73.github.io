@@ -3,11 +3,8 @@
     src: url(../font/OpenSans-Regular.ttf); 
  }
  body{
- 	height:100%;
- }
- .background{
- 	height: 100%;
- 	background-color: #f9f9f9;
+ background-color: #f9f9f9;
+ height:100%;
  }
 .wrapper{
 	width: 1060px;
