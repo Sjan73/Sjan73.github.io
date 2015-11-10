@@ -1,5 +1,11 @@
+body{
+	background: url(../img/background.jpg) no-repeat fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 .wrapper{
-	background: url(../img/background.jpg) no-repeat;
 	margin: 0 auto;
     padding-top: 37px;
 }
@@ -31,8 +37,9 @@ header{
 	margin-right: 30px;
 }
 .contacts{
-	margin-left: 230px;
-	margin-bottom: 35px;
+	margin-left: 205px;
+	margin-bottom: 25px;
+	padding: 5px 10px;
 }
 .contacts li:first-child{
 	font: 12px Tahoma, sans-serif;
@@ -45,10 +52,11 @@ header{
 }
 .country img{
 	display: block;
+	text-align: center;
 }
 .country li{
 	display: inline-block;
-	padding-right: 15px;
+	padding: 0 5px;
 	text-align: center;
 	font: 10px Tahoma, sans-serif;
 }
@@ -73,8 +81,7 @@ header{
 	float: left;
 	display: block;
 	position: relative;
-	margin-right: 30px;
-	padding: 5px 10px;
+	padding: 5px 45px 5px 10px;
 }
 .nav .list-1{
 	margin-left: 65px;
@@ -85,36 +92,33 @@ header{
 	color:#fff;
 	text-decoration:none;
 }
-.nav li:hover{
-	background: #303030;
-}
 .triangles:after{
 	content: "";
 	display: block;
 	position: absolute;
 	top: 17px;
-	right: 0;
+	right: 40px;
 	width: 5px;
 	height: 6px;
 	background: url(../img/triangles.png);	
 }
 .nav .dropdown{
-display: none;
-position: absolute;
-left: 0; 
-top: 100%;
-width: 160px; 
+	display: none;
+	position: absolute;
+	left: 0; 
+	top: 100%;
 }
-.nav li ul li {
-float: none;
-display: block;
-position: relative;
-background-color: rgb( 48, 48, 48 );
-line-height: 15px;
--webkit-box-shadow: 2px 4px 5px 0 #000000;
-  -moz-box-shadow: 2px 4px 5px 0 #000000;
-	 box-shadow: 2px 4px 5px 0 #000000;
-z-index: 1;
+.nav .dropdown li {
+	float: none;
+	width: 73%;
+	display: block;
+	position: relative;
+	background-color: rgb( 48, 48, 48 );
+	line-height: 10px;
+	-webkit-box-shadow: 2px 4px 5px 0 #000000;
+  	 -moz-box-shadow: 2px 4px 5px 0 #000000;
+	   box-shadow: 2px 4px 5px 0 #000000;
+	z-index: 1;
 }
 .nav li ul li:hover{
 	background: #4c4949;
@@ -123,24 +127,33 @@ z-index: 1;
 display: block;
 }
 .fon {
-width: 1000px; 
-background: url(../img/fon.png) repeat-y; 
+    width: 1000px; 
+	overflow: hidden;
 }
 .leftColumn {
-width: 210px;
-float: left;
-text-align: center;
-padding: 5px 0;
+	width: 210px;
+	float: left;
+	text-align: center;
+	background-color: #edeef0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+
 }
 .centerColumn {
-width: 580px;
-float: left;
+	width: 580px;
+	float: left;
+	background: #fff;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
 .rightColumn {
-width: 210px;
-float: right;
-text-align: center;
-padding: 5px 0;
+	width: 210px;
+	float: right;
+	text-align: center;
+	padding: 5px 0;
+	background-color: #edeef0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
 }
 h3 {
 	font: 18px Tahoma,sans-serif;
@@ -157,3 +170,5 @@ h3 {
 	color: #fff;
 	text-align: center;
 }
+
+
