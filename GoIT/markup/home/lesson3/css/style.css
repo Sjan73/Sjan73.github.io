@@ -33,11 +33,11 @@ header{
     background-image: -webkit-linear-gradient(left, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
 	background-image: -o-linear-gradient(left, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
 	background-image: linear-gradient(to right, rgb(68,67,67) 0%, rgb(94,94,94) 100%);
-}		
+}
 .nav li{
 	display: inline-block;
 	width: 100px;
-	margin-right: 20px;
+	margin-right: -4px;
 	padding: 10px 0;
 	text-align: center;
 	-webkit-box-sizing: border-box;
@@ -64,8 +64,14 @@ header{
     background-image: -ms-linear-gradient( 90deg, rgb(46,46,46) 0%, rgb(74,74,74) 100%);
 	border-left: 1px solid #838383;
 	border-right: 1px solid #838383;
-
+		border-collapse: collapse;
 } 
+.nav li:hover:first-child{
+	border-right: 0;
+}
+.nav li:hover:nth-child(3){
+	border-left: 0;
+}
 aside{
 	width: 240px;
 	float: left;
