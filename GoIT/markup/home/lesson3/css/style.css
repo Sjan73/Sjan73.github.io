@@ -2,7 +2,11 @@
     font-family: 'Open Sans'; 
     src: url(../font/OpenSans-Regular.ttf); 
  }
+ body{
+ 	height:100%;
+ }
  .background{
+ 	height: 100%;
  	background-color: #f9f9f9;
  }
 .wrapper{
@@ -17,6 +21,7 @@
 	width: 965px;
 	margin: 0 auto;
 	height: 100%;
+	background-color: #fff;
 }
 header{
 	display: block;
@@ -67,7 +72,7 @@ aside{
     margin-top: 40px;
 }
 .side-bar li {
-	padding: 12px 0 9px 25px;
+	
 	border: 1px solid #c8c8c8;
 	border-bottom: none;
 }
@@ -75,23 +80,21 @@ aside{
 	border-bottom: 1px solid #c8c8c8; 
 }
 .side-bar li a{
+	display: block;
+	padding: 12px 0 9px 25px;
 	font: 14px 'Open Sans', sans-serif; 
 	text-decoration: none;
 	color: #adacac;
 }
-.side-bar li:nth-child(even){
-	background: #fff;
-}
-.side-bar li:nth-child(odd){
+.side-bar .active a{
+	padding-left: 35px;
+	color: #2c2c2c;
 	background: #f9f9f9;
 }
-.side-bar .active a{
-	padding-left: 10px;
-	color: #2c2c2c;
-}
 .side-bar li a:hover{
-	padding-left: 10px;
+	padding-left: 35px;
 	color: #2c2c2c;
+	background: #f9f9f9;
 }
 article{
 	float: right;
@@ -102,6 +105,7 @@ article{
 article img{
 	padding: 50px 80px;
 	border: 1px solid #c8c8c8;
+	background: #fff;
 }
 
 article p {
