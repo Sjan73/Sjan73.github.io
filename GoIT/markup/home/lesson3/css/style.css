@@ -7,12 +7,13 @@
 }
  body{
  	min-height: 100%;
-  	background: lightgrey none repeat scroll 0 0;
+  	background: #f9f9f9 none repeat scroll 0 0;
 }
 .wrapper{
 	width: 1060px;
 	min-height: 100%;
 	margin: 0 auto;
+	padding: 0 0 60px;
 	background-color: #fff;
 	box-shadow: -4px 0px 4px 0px #dbdbdb, 4px 0px 4px 0px #dbdbdb;
 	border-left: 1px solid #dbdbdb;
@@ -126,7 +127,7 @@ article p {
 footer{
 	height: 40px;
 	clear:both;
-	margin-bottom: 60px;
+	margin-bottom: 0;
 	background-color: #e1e1e1;
 }
 .nav-2 li {
