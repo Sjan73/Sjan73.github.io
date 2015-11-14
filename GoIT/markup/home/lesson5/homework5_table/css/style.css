@@ -1,0 +1,104 @@
+table{
+	width: 550px;
+	height: 540px;
+	border-collapse: collapse;
+	border: 12px solid #fff;
+}
+td{
+	border: 10px solid #000;
+}
+.row1{
+	border-color: #fff;
+	height: 48px;
+}
+.cell1{
+	width: 116px;
+	background: #fff;
+}
+.cell2{
+	width: 198px;
+	background: #fff;
+}
+.cell3{
+	width: 165px;
+	background: #fff063;
+}
+.cell4{
+	width: 48px;
+	height: 130px;
+	background: #fff;
+}
+.cell5{
+	width: 272px;
+	height: 268px;
+	background: #ff5e41;
+}
+.cell6{
+	width: 163px;
+	height: 130px;
+	background: #fff063;
+}
+.cell7{
+	width: 50px;
+	height: 200px;
+	background: #fff;
+}
+.cell8{
+	width: 75px;
+	height: 130px;
+	background: #fff;
+}
+.cell9{
+	width: 75px;
+	height: 130px;
+	background: #fff;
+}
+.cell10,
+.cell11,
+.cell15,
+.cell16{
+	width: 125px;
+	height: 64px;
+	background: #313936;
+}
+.cell12{
+	width: 130px;
+	height: 64px;
+	background: #fff;
+}
+.cell13{
+	width: 162px;
+	height: 64px;
+	background: #fff;
+}
+.cell14{
+	width: 50px;
+	height: 136px;
+	background: #ffec5b;
+}
+.cell17{
+	width: 128px;
+	height: 58px;
+	background: #fff;
+}
+.cell18{
+	width: 160px;
+	height: 95px;
+	background: #0c4a86;
+}
+.cell19{
+	width: 130px;
+	height: 68px;
+	background: #fff;
+}
+.cell20{
+	width: 124px;
+	height: 30px;
+	background: #3a4944;
+}
+.cell21{
+	width: 300px;
+	height: 30px;
+	background: #fff;
+}
+
