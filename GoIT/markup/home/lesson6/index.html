@@ -52,7 +52,7 @@
 
 					<div class="buy_items">
 						<ul>
-							<li><img src="img/basket.png" alt="Basket"></li>
+							<li><a href="#"><img src="img/basket.png" alt="Basket"></a></li>
 							<li class="font_1">товаров:</li>
 							<li class="font_2">0</li>
 							<li class="font_1">на сумму:</li>
@@ -134,43 +134,42 @@
 				<div class="tires">
 					<span>ПОИСК ШИН</span>
 					<div class="left_block2">
-						<dl>
-							<dt>Размер:</dt>
-							<dd>
-								<select name="size[]" class="size">
+						<div class="left_block2_row">
+							<span>Размер:</span>
+							
+							<select name="size[]" class="size">
 									<option value="size1">145</option>
-									<span>&#47;</span>
+									<span class="slash">&#47;</span>
 									<option value="size2"></option>
-								</select>
-							</dd>
+							</select>
+						</div>
+							
+						<div class="left_block2_row">	
+							<span>R</span>
+							<select name="r[]">
+								<option value="r">12</option>
+							</select>
+						</div>
 
-							<dt class="r">R</dt>
-							<dd>
-								<select name="r[]">
-									<option value="r">12</option>
-								</select>
-							</dd>
+						<div class="left_block2_row">	
 
-							<dt>Сезон:</dt>
-							<dd class="season">
-								<form action="#" > 
+							<span class="season">Сезон:</span>
+							<form action="#" > 
+								<div class="season_checkbox">
 									<input type="checkbox" name="summer" id="checkbox" value="first_checkbox">
 									<label for="checkbox">лето</label>
-								</form>
-							</dd>
-							<dd class="season">
-								<form action="#">
+								</div>
+								<div class="season_checkbox">	
 									<input type="checkbox" name="winter" id="checkbox" value="second_checkbox">
 									<label for="checkbox">зима</label>
-								</form>
-							</dd>
-							<dd class="season">
-								<form action="#">
+								</div>	
+							    <div class="season_checkbox">
 									<input type="checkbox" name="all_season" id="checkbox" value="third_checkbox">
 									<label for="checkbox">всесез</label>
-								</form>
-							</dd>							
-						</dl>
+								</div>	
+							</form>	
+								
+						</div>	
 					</div>
 					<a href="#" class="search2">поиск...</a>
 				</div>
@@ -178,29 +177,32 @@
 				<div class="disc">
 					<span>ПОИСК ДИСКОВ</span>
 					<div class="left_block3">
-						<dl>
-							<dt>Диаметр <span>диска:</span></dt>
-							<dd>
-								<select name="diameter[]">
-									<option value="diameter">14</option>
-								</select>
-							</dd>
+						<form action="#">
+						<div class="left_block3_row">
+							<p>Диаметр <span>диска:</span></p>
+							
+							<select name="diameter[]">
+								<option value="diameter">14</option>
+							</select>
+						</div>	
+						<div class="left_block3_row">
+							<p>Количество <span>крепёжных отверстий:</span></p> 
+														
+							<select name="qlt[]">
+								<option value="qlt">3</option>
+							</select>
+						</div>
 
-							<dt>Количество <span>крепёжных отверстий:</span></dt>
-							<dd>
-								<select name="qlt[]">
-									<option value="qlt">3</option>
-								</select>
-							</dd>
-
-							<dt>Диаметр <span>расположения крепёжных отверстий:</span></dt>
-							<dd>
-								<select name="drks[]">
-									<option value="drks">12</option>
-								</select>
-							</dd>
-						</dl>
+						<div class="left_block3_row">
+							<p>Диаметр <span>расположения крепёжных отверстий:</span></p> 
+													
+							<select name="drks[]">
+								<option value="drks">12</option>
+							</select>
+						</div>	
+						</form>
 					</div>
+					<a href="#" class="search3">поиск...</a>
 				</div>
 			</div>
 

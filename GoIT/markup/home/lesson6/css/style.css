@@ -139,8 +139,10 @@ input[type="password"]{
     display: block;
 }
 .home{
+	position: absolute;
 	width: 12px;
-	left: 0;
+	top: 5;
+	left: 7;
 	background: url(../img/navi.png) no-repeat 0 0;
 }
 .menu {
@@ -304,41 +306,51 @@ input[type="password"]{
 .tires .search2{
 	position: absolute;
 	bottom: 5px;
-	left: 125px;
+	left: 130px;
 	text-decoration: underline;
 	font: italic 14px Arial, sans-serif;
 	color: #154467;
 }
 .left_block2{
 	float: left;
-}
-.left_block2 dl{
-	position: relative;
-	width: 160px;
 	margin-top: 25px;
 }
-.left_block2 dl dt{
+.left_block2_row{
+	width: 100%;
+	height: 18px;
+	margin: 0 0 5px 0;
+}
+.left_block2_row span{
+	display: block;
 	float: left;
-	width: 40px;
-	margin: 5px 5px 0 20px;
+	position: static;
+	width: 38px;
+	height: 10px;
+	margin-left: 15px;
 	font: 10px 'Lucida-Sans-Unicode', sans-serif;
 	color: #000;
 }
-.left_block2 .r{
-	font: 11px Arial, sans-serif;
-	color: #000;
-}
-.left_block2 dl dd{
-	margin: 5px 0;
-}
-.left_block2 .size{
+.left_block2_row select{
 	width: 50px;
+	float: left;
+	margin-left: 10px;
 }
-.left_block2 .r select{
-	width: 42px;
+.slash{
+	float: left;
 }
-.left_block2 .season{
-	margin: 0;
+.left_block2_row option{
+	display: block;
+    padding: 0px 2px 1px;
+    min-height: 18px;
+}
+.left_block2_row .season{
+	margin: 0 10px 40px 15px;
+}
+.season_checkbox{
+	margin: 5px 0 0 0;
+    height: 10px;
+    width: 90px;
+    float: left;
 }
 .left_block2 input[type="checkbox"]+label{
 	font: 12px 'Lucida-Sans-Unicode', sans-serif;
@@ -367,29 +379,49 @@ input[type="password"]{
 	font: 900 12px Arial, sans-serif;
 	color: #114165;
 }
+.disc .search3{
+	position: absolute;
+	bottom: 5px;
+	left: 200px;
+	text-decoration: underline;
+	font: italic 14px Arial, sans-serif;
+	color: #154467;
+}
 .left_block3{
 	float: left;
-}
-.left_block3 dl{
-	position: relative;
-	width: 160px;
 	margin-top: 25px;
 }
-.left_block3 dl dt{
+.left_block3_row{
+	width: 100%;
+	height: 18px;
+	margin: 0 0 5px 0;
+}
+.left_block3_row p{
+	display: block;
 	float: left;
-	width: 85px;
-	margin: 0 0 0 20px;
+	position: static;
+	width: 76px;
+	height: 10px;
+	margin-left: 15px;
 	font: 10px 'Lucida-Sans-Unicode', sans-serif;
 	color: #000;
 }
-.left_block3 dl dt span{
+.left_block3_row span{
 	position: static;
 	font: 9px 'Lucida-Sans-Unicode', sans-serif;
 	color: #77858b;
 }
-.left_block3 dl dd{
-	float: right;
+.left_block3_row select{
+	width: 56px;
+	float: left;
+	margin-left: 15px;
 }
+.left_block2_row option{
+	display: block;
+    padding: 0px 2px 1px;
+    min-height: 18px;
+}
+
 .main{
 	display: block;
 	width: 100%;
@@ -632,7 +664,9 @@ input[type="password"]{
 	font: 11px Arial, sans-serif;
     color: #e5e9ea;
 }
-
+input[type="submit"]{
+	border: none;
+}
 .tire_companies{
 	width: 100%;
 	box-sizing: border-box;
