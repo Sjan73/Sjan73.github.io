@@ -71,10 +71,12 @@ header{
 	width: 100%;
 	background-color: #333333;
 	font: 14px Tahoma, sans-serif;
+	border-bottom: 1px solid #000;
 	-webkit-box-shadow: 0 -4px 0 0 #cacbcb;
      -moz-box-shadow: 0 -4px 0 0 #cacbcb;
 	   box-shadow: 0 -4px 0 0 #cacbcb;
 	   box-shadow: 0 4px 3px 0 #000000;
+
 }
 .nav li{
 	float: left;
@@ -99,7 +101,7 @@ header{
 	right: 40px;
 	width: 5px;
 	height: 6px;
-	background: url(../img/triangles.png);	
+	background: url(../img/triangles.png) no-repeat;	
 }
 .nav .dropdown{
     display: none;
