@@ -42,7 +42,7 @@ header{
 	padding: 5px 10px;
 }
 .contacts li:first-child{
-	font: 12px Tahoma, sans-serif;
+	font: bold 12px Tahoma, sans-serif;
 	color: #128aa7;
 }
 .contacts li a{
@@ -51,16 +51,15 @@ header{
 	text-decoration: none;
 }
 .country img{
-	display: block;
 	text-align: center;
 }
-.country li{
+.country li {
 	display: inline-block;
 	padding: 0 5px;
 	text-align: center;
-	font: 10px Tahoma, sans-serif;
 }
-.country li a{
+.country li p{
+	font: 10px Tahoma, sans-serif;
 	color: #128aa7;
 }
 .h-image {
@@ -103,7 +102,7 @@ header{
 	background: url(../img/triangles.png);	
 }
 .nav .dropdown{
-	display: none;
+    display: none;
 	position: absolute;
 	left: 0; 
 	top: 100%;
@@ -117,7 +116,7 @@ header{
 	display: block;
 	position: relative;
 	background-color: rgb( 48, 48, 48 );
-	line-height: 10px;
+	line-height: 6px;
 	
 	z-index: 1;
 }
@@ -159,6 +158,9 @@ display: block;
 h3 {
 	font: 18px Tahoma,sans-serif;
 	padding: 5px 0;
+}
+.centerColumn p{
+	margin: 20px 15px;
 }
 .leftColumn p,
 .rightColumn p{
