@@ -1,5 +1,5 @@
 body{
-	background: url(../img/background.jpg) no-repeat fixed;
+	background: #0c74a0 url(../img/background.jpg) repeat-x;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,9 +37,8 @@ header{
 	margin-right: 30px;
 }
 .contacts{
-	margin-left: 205px;
-	margin-bottom: 25px;
-	padding: 5px 10px;
+	float: right;
+	margin: 5px 30px 30px 0;
 }
 .contacts li:first-child{
 	font: bold 12px Tahoma, sans-serif;
@@ -49,6 +48,11 @@ header{
 	font: 12px Tahoma, sans-serif;
 	color: #128aa7;
 	text-decoration: none;
+}
+.country {
+	float: right;
+	clear: right;
+	padding: 0 25px 0 0;
 }
 .country img{
 	text-align: center;
@@ -104,7 +108,7 @@ header{
 	background: url(../img/triangles.png) no-repeat;	
 }
 .nav .dropdown{
-    display: none;
+  display: none;
 	position: absolute;
 	left: 0; 
 	top: 100%;
@@ -114,12 +118,13 @@ header{
 }
 .nav .dropdown li {
 	float: none;
-	width: 73%;
+	box-sizing: border-box;
+	width: 100%;
 	display: block;
 	position: relative;
+	padding: 5px 15px 5px 10px;
 	background-color: rgb( 48, 48, 48 );
 	line-height: 6px;
-	
 	z-index: 1;
 }
 .nav li ul li:hover{
