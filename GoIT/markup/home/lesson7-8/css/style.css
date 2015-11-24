@@ -1,16 +1,13 @@
 @font-face {
     font-family: 'League Gothic'; 
-    src: url(../font/LeagueGothic.ttf); 
+    src: url(../font/LeagueGothic.ttf) format('truetype'); 
+    src: url(../font/LeagueGothic.eot) format('truetype'); 
+    src: url(../font/LeagueGothic.otf) format('truetype');
+    src: url(../font/LeagueGothic.woff) format('truetype');
+    font-weight: normal;
+    font-style: normal;
  }
- @font-face {
-    font-family: 'OpenSans-Light'; 
-    src: url(../font/OpenSans-Light.ttf); 
- }
- @font-face {
-    font-family: 'OpenSans-ExtraBold'; 
-    src: url(../font/OpenSans-ExtraBold.ttf); 
- }
- .clearfix::after{
+.clearfix::after{
 	content: "";
 	clear: both;
 	display: block;
@@ -27,15 +24,11 @@
 	margin: 0 auto;
 	overflow: hidden;
 }
-.background{
+.header{
 	width: 100%;
-	max-width: 2400px;
 	height: 850px;
 	position: relative;
 	background: #9d77a8 url(../img/bg.jpg) no-repeat top center;
-}
-.header{
-	margin-bottom: 250px;
 }
 .logo{
 	float: left;
@@ -70,35 +63,39 @@
 .nav_list:hover{
 	border-bottom: 2px solid #edbfff;
 }
-.slaider_bg{
+.slaider{
 	width:100%;
-	max-width: 2400px;
 	height: 390px;
 	position: absolute;
 	left: 0;
 	top: 278px;
-	background-color: #000;
-	opacity: 0.2;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.slaider .container{
+	padding: 0 50px;
 }
 .arrow_left{
-	float: left;
-  margin-left: 2%;
+	position: absolute;
+	top: 10%;
+  left: 5%;
   line-height:390px;
 }
 .arrow_right{
-	float: right;
-  margin-right: 2%;
+	position: absolute;
+	top: 10%;
+  left: 90%;
   line-height:390px;
 }
 .slaider_content{
 	float: left;
-	width: 552px;
-	height: 202px;
+	width: 55%;
+	margin-right: 10%;
+	height: auto;
 	margin-top: 85px;
 }
 .slaider_img{
-	float:right;
-	margin-right: 8%;
+	float: left;
+	width: 30%;
 }
 .slaider_img img{
 	width: 100%;
@@ -106,7 +103,7 @@
 	height: auto;
 }
 .content{
-  font: 19px "OpenSans-Light", Arial, sans-serif;
+  font: 200 19px OpenSans, Arial, sans-serif;
   color: #fff;
   line-height: 1.2;
 	text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
@@ -123,33 +120,25 @@
 	line-height: 1.2;
 	text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
 }
-.background .radio{
+.slider-nav{
 	position: absolute;
-	top: 770px;
-	left: 72%;
+	top: 776px;
+	left: 68%;
 }
-.background input[type="radio"]{
-	  display: inline-block;
-    width: 17px;
-    height: 17px;
-    border-radius: 100%;
-    border: 1px solid rgba(0,0,0,.3);
-    background: rgb(66, 67, 76);
-    outline: none;
-    margin: 3px;
-    box-sizing: border-box;
-    -webkit-appearance:none;
-}
-.background input[type="radio"]:checked::before{
-    content: "";
-    display: block;
-    background: rgb(255, 255, 255);
-    border-radius: 100%;
-    width: 11px;
-    height: 11px;
-    margin: 2px;
-    pointer-events: none;
-}
+.slider-nav__item{
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: rgba(66,66,66,0.5);
+  border: 3px solid rgba(66,66,66,0.5);
+  border-radius: 50%;
+  margin: 0px 2px;
+  padding: 0px 0px;
+ }
+.slider-nav__item:hover{
+  background: rgba(255,255,255, 1);
+  border-color: rgba(0,0,0,0.7);
+ }
 .about{
 	width: 100%;
 	height: 342px;
@@ -199,7 +188,7 @@
 }
 .about_content{
 	margin-bottom: 20px;
-	font: 16px "OpenSans-Light", Arial, sans-serif;
+	font: 200 16px OpenSans, Arial, sans-serif;
 	color: #fff;
 	text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
 	line-height: 1.5;
@@ -222,6 +211,8 @@
 .respond{
 	float: left;
 	width: 53%;
+	height:auto;
+	position: relative;
 	margin-top: 115px;
 }
 .user{
@@ -231,7 +222,7 @@
 .respond_text{
 	width: 100%;
 	max-width: 430px;
-	height: 295px;
+	height: 315px;
 	margin-left: 4%;
 	background: #f9f9f9 url(../img/bubl.png) no-repeat;
 }
@@ -247,7 +238,7 @@
 }
 .respond_content{
 	padding: 10px 30px 40px 40px;
-	font: 16px "OpenSans-Light", Arial, sans-serif;
+	font: 200 16px OpenSans, Arial, sans-serif;
 	color: #454545;
 	text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
 	line-height: 1.5;
@@ -276,13 +267,13 @@
 	margin-left: 4%;
 }
 .list_title{
-	font: 16px "OpenSans-ExtraBold", Arial, sans-serif;
+	font: 800 16px OpenSans, Arial, sans-serif;
 	color: #454545;
   line-height: 1.5;
   text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
 }
 .list_content{
-	font: 16px "OpenSans-Light", Arial, sans-serif;
+	font: 200 16px OpenSans, Arial, sans-serif;
 	color: #454545;
   line-height: 1.5;
   text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
@@ -295,30 +286,25 @@
 	text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
 	line-height: 1.333;
 }
-.radio{
-	text-align: center;
+.respond .slider-nav{
+	position: absolute;
+	top: 288px;
+	left: 38%;
 }
-input[type="radio"]{
-	  display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 100%;
-    border: 1px solid rgba(0,0,0,.3);
-    outline: none;
-    margin: 5px;
-    box-sizing: border-box;
-    -webkit-appearance:none;
-}
-input[type="radio"]:checked:before{
-    content: "";
-    display: block;
-    background: rgb(85, 85, 85);
-    border-radius: 100%;
-    width: 12px;
-    height: 12px;
-    margin: 2px;
-    pointer-events:none;
-}
+.respond .slider-nav__item{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: rgb(255, 255, 255);
+  border: 3px solid rgb(232, 232, 232);
+  border-radius: 50%;
+  margin: 0px 2px;
+  padding: 0px 0px;
+ }
+.respond .slider-nav__item:hover{
+  background: rgba(94,94,94, 1);
+  border-color: rgb(232, 232, 232);
+ }
 .company{
 	width: 100%;
 	height: 120px;
@@ -372,7 +358,7 @@ input[type="radio"]:checked:before{
 	margin-bottom: 10px;
 }
 .content_info_paragraph{
-	font: 16px "OpenSans-Light", Arial, sans-serif;
+	font: 200 16px OpenSans, Arial, sans-serif;
 	color: #787878;
   line-height: 1.5;
   text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
@@ -407,33 +393,33 @@ input[type="radio"]:checked:before{
 	margin: 40px 0;
 }
 .footer_design_p{
-	font: 12px "OpenSans-Light", Arial, sans-serif;
+	font: 200 12px OpenSans, Arial, sans-serif;
 	color: #fff;
 	line-height: 2.81;
 	text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
 }
 .footer_design_p span{
-	font: 12px "OpenSans-ExtraBold", Arial, sans-serif;
+	font: 800 12px OpenSans, Arial, sans-serif;
 	color: #fff;
 	line-height: 2.81;
 	text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
 }
 
-@media screen and (max-width: 960px) {
-	
+@media screen and (min-width: 768px), screen and (max-width: 960px) {
+/* .logo{
+	width: 100%;
+	clear: right;
 }
-
-
-@media screen and (max-width: 768px) {
-
+.nav{
+	float: left;
 }
-
-
-@media screen and (max-width: 480px) {
-
+.nav_list{
+	margin-left: 0;
+}  */
+}  
+@media screen and (min-width: 480px), screen and (max-width: 768px)  {
+   /*  —480— */
 }
-
-
-@media screen and (max-width: 320px) {
-
+@media screen and (min-width: 320px), screen and (max-width: 480px)  {
+    /*  —320— */
 }
