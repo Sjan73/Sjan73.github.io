@@ -1,13 +1,9 @@
 body{
 	background: #0c74a0 url(../img/background.jpg) repeat-x;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 .wrapper{
 	margin: 0 auto;
-    padding-top: 37px;
+  padding-top: 37px;
 }
 .container{
 	width: 1000px;
@@ -69,18 +65,19 @@ header{
 .h-image {
 	border-top: 2px solid #128aa7;
 	border-bottom: 1px solid #128aa7;
+	box-sizing: border-box;
 }
 .nav{
 	float: left;
 	width: 100%;
 	background-color: #333333;
 	font: 14px Tahoma, sans-serif;
+	border-top: 1px solid #cacbcb;
 	border-bottom: 1px solid #000;
-	-webkit-box-shadow: 0 -4px 0 0 #cacbcb;
-     -moz-box-shadow: 0 -4px 0 0 #cacbcb;
-	   box-shadow: 0 -4px 0 0 #cacbcb;
-	   box-shadow: 0 4px 3px 0 #000000;
-
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 4px 8px 0 #4f4f50;
+     -moz-box-shadow: 0 4px 8px 0 #4f4f50;
+	   box-shadow: 0 4px 8px 0 #4f4f50;
 }
 .nav li{
 	float: left;
@@ -134,7 +131,7 @@ header{
 display: block;
 }
 .fon {
-    width: 1000px; 
+  width: 1000px; 
 	overflow: hidden;
 }
 .leftColumn {
