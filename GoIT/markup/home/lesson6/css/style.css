@@ -337,13 +337,18 @@ input[type="password"]{
 	float: left;
 	margin-left: 10px;
 }
-.slash{
-	float: left;
+select.size{
+	margin-left: 0;
 }
 .left_block2_row option{
 	display: block;
-    padding: 0px 2px 1px;
-    min-height: 18px;
+  padding: 0px 2px 1px;
+  min-height: 18px;
+}
+span.slash{
+	width: 5px;
+	font-weight: 600;
+	margin: 0 3px;
 }
 .left_block2_row .season{
 	margin: 0 10px 40px 15px;
@@ -392,18 +397,26 @@ input[type="password"]{
 .left_block3{
 	float: left;
 	margin-top: 25px;
+	margin-right: 20px;
+}
+.left_block3:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 170px;
+	border-right: 1px solid #bdc6ca;
+	height: 106px;
 }
 .left_block3_row{
 	width: 100%;
-	height: 18px;
-	margin: 0 0 5px 0;
+	height: 33px;
 }
 .left_block3_row p{
 	display: block;
 	float: left;
-	position: static;
 	width: 76px;
-	height: 10px;
+	height: 30px;
 	margin-left: 15px;
 	font: 10px 'Lucida-Sans-Unicode', sans-serif;
 	color: #000;
@@ -412,6 +425,13 @@ input[type="password"]{
 	position: static;
 	font: 9px 'Lucida-Sans-Unicode', sans-serif;
 	color: #77858b;
+}
+p.left_block3_row-p{
+	margin-top: -5px;
+	line-height: 1;
+}
+span.left_block3_row-span{
+	line-height: 1.2;
 }
 .left_block3_row select{
 	width: 56px;
@@ -422,6 +442,29 @@ input[type="password"]{
 	display: block;
     padding: 0px 2px 1px;
     min-height: 18px;
+}
+.left_block3_right{
+	margin-top: 5px;
+	float: left;
+}
+.left_block3_right p{
+	width: 60px;
+	font: 10px 'Lucida-Sans-Unicode', sans-serif;
+	color: #000;
+}
+p.left_block3_right_p{
+	line-height: 0.8;
+}
+.left_block3_right span{
+	position: static;
+	width: 60px;
+	font: 9px 'Lucida-Sans-Unicode', sans-serif;
+	color: #77858b;
+	line-height: 1;
+}
+.left_block3_right select{
+	width: 59px;
+	margin: 4px 0;
 }
 .main{
 	display: block;
@@ -475,17 +518,22 @@ input[type="password"]{
 	color: #114165;
 }
 .name_list{
-	list-style: circle;
-	margin-left: 35px;
+	margin: 5px  0 5px 20px;
 }
 .name_list li{
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-			box-sizing: border-box;	
+	width: 6px;
+  height: 6px;
+	border: 2px solid rgb( 121, 135, 141 );
+  border-radius: 50%;
+  color: rgb( 255, 255, 255 );
+	margin: 15px 5px;
 }
 .name_list li a{
-	display: block;
-	padding: 5px 0;
+	display:block;
+	width: 130px;
+	height: 20px;
+	margin-left: 14px;
+	margin-top: -7px;
 	font: 14px 'Lucida-Sans-Unicode', sans-serif;
 	color: #465961;
 }
@@ -493,7 +541,7 @@ input[type="password"]{
 	font: bold italic 14px Arial, sans-serif;
 	color: #0c3256;
 	text-decoration: underline;
-  margin-left: 10px;
+  margin-left: 25px;
 	-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 			box-sizing: border-box;

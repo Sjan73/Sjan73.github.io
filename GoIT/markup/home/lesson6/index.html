@@ -137,10 +137,12 @@
 						<div class="left_block2_row">
 							<span>Размер:</span>
 							
+							<select name="size[]">
+									<option value="size1">145</option>							 
+							</select>
+							<span class="slash">&#47;</span>
 							<select name="size[]" class="size">
-									<option value="size1">145</option>
-									<span class="slash">&#47;</span>
-									<option value="size2"></option>
+								<option value="size2"></option>
 							</select>
 						</div>
 							
@@ -186,7 +188,7 @@
 							</select>
 						</div>	
 						<div class="left_block3_row">
-							<p>Количество <span>крепёжных отверстий:</span></p> 
+							<p class="left_block3_row-p">Количество <span class="left_block3_row-span">крепёжных отверстий:</span></p> 
 														
 							<select name="qlt[]">
 								<option value="qlt">3</option>
@@ -194,7 +196,7 @@
 						</div>
 
 						<div class="left_block3_row">
-							<p>Диаметр <span>расположения крепёжных отверстий:</span></p> 
+							<p class="left_block3_row-p">Диаметр <span class="left_block3_row-span">расположения крепёжных отверстий:</span></p> 
 													
 							<select name="drks[]">
 								<option value="drks">12</option>
@@ -202,6 +204,19 @@
 						</div>	
 						</form>
 					</div>
+
+					<div class="left_block3_right">
+						<p class="left_block3_right_p">ДЦО <span>(диаметр  центрального  отверстия):</span></p>
+						<select name="dco[]">
+								<option value="dco">12</option>
+						</select>
+
+						<p class="left_block3_right_p">ЕТ <span>(вылет диска):</span></p>
+						<select name="et[]">
+								<option value="et">12</option>
+						</select>
+					</div>
+
 					<a href="#" class="search3">поиск...</a>
 				</div>
 			</div>
