@@ -1,0 +1,25 @@
+fieldset {
+  width: 50%;
+  margin: 25px auto;
+  -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+      border-radius: 15px;
+  border: 2px solid #ccc;
+  background-color: #0099ff;
+}
+fieldset div {
+  margin: 10px 0;
+}
+label {
+    display: inline-block; 
+    width: 70px;
+}
+input{
+  margin-right: 5px;
+}
+.tooltip{
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 3px solid #ccc;
+  color: #fff;
+}
