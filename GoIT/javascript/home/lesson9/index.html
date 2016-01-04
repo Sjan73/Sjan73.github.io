@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jQuery</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jcarousel.basic.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src='js/jquery.customSelect.min.js'></script>
+    <script src="js/jquery.jcarousel.min.js"></script> 
+	<script src="js/jcarousel.basic.js"></script>
+	<script src='js/script.js'></script>
+</head>
+<body>
+
+<select class="styled">
+    <option value="">Select auto...</option>
+    <option value="ibiza">Seat Ibiza</option>
+    <option value="toledo">Seat Toledo</option>
+    <option value="leon">Seat Leon</option>
+    <option value="altea">Seat Altea</option>
+</select>
+
+ <div class="wrapper">
+ 	<h1>Seat Ibiza</h1>
+  		<div class="jcarousel-wrapper">	
+			<div class="jcarousel">
+				<ul>
+        			<li><img src="img/seat-ibiza.jpg" width="600" height="400" alt="Seat Ibiza"></li>
+        			<li><img src="img/seat-ibiza-2.jpg" width="600" height="400" alt="Seat Ibiza"></li>
+        			<li><img src="img/seat-ibiza-3.jpg" width="600" height="400" alt="Seat Ibiza"></li>
+        			<li><img src="img/seat-ibiza-4.jpg" width="600" height="400" alt="Seat Ibiza"></li>
+        			<li><img src="img/seat-ibiza-5.jpg" width="600" height="400" alt="Seat Ibiza"></li>
+    	        </ul>
+            </div>
+  	
+	    	<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        	<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        	        
+        	<p class="jcarousel-pagination"></p>
+        </div> 
+</div>   
+
+<div class="checkbox_engine">
+	<h3>Engine capacity</h3>
+	<div>
+		<input type="checkbox" class="niceCheck" id="test-check1">
+		<label for="test-check1">1.0 liter</label>
+	</div>
+	<div>
+		<input type="checkbox" class="niceCheck niceChecked" id="test-check2" checked>
+		<label for="test-check2">1.4 liter</label>
+	</div>
+	<div>
+		<input type="checkbox" class="niceCheck niceChecked niceCheckDisabled" id="test-check3" checked disabled>
+		<label for="test-check3">1.6 liter</label>
+	</div>
+</div>
+
+<div class="checkbox_transmission">
+	<h3>Transmission</h3>
+	<div>
+	<input type="checkbox" class='input_transmission' id="test-check4" checked>
+	<label for="test-check4" class='label_transmission'>Mechanics</label>
+    </div>
+    <div>
+	<input type="checkbox" class='input_transmission' id="test-check5">
+	<label for="test-check5" class='label_transmission'>Automatic</label>
+	</div>
+	<div>
+	<input type="checkbox" class='input_transmission' id="test-check6">
+	<label for="test-check6" class='label_transmission'>Tiptronic</label>
+	</div>
+</div>
+
+</body>
+</html>
