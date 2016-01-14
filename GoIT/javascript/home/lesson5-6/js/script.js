@@ -84,4 +84,5 @@ startStop.addEventListener('click', function() {
 clear.addEventListener('click', function() {
     watch.reset();
     watch.stop();
+    startStop.textContent = "Start";
 });
