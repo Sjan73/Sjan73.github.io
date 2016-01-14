@@ -1,49 +1,86 @@
-var time = 0;
-var start = 0;
+function StopWatch(el) {
+    var time = 0;
+    var interval;
+    var offset;
 
-function startPause() {
-    if (start == 0) {
-        start = 1;
-        increment();
-        document.getElementById('startPause').innerHTML = 'Pause';
-        document.getElementById('startPause').style.background = '#003399';
-    } else {
-        start = 0;
-        document.getElementById('startPause').innerHTML = 'Continue';
-        document.getElementById('startPause').style.background = '#00cc00';
+    function update() {
+        if (this.isOn) {
+           time += delta();  
+        }
+        var formattedTime = timeFormatter(time);
+        el.textContent = formattedTime;
     }
-}
-function timerClear() {
-    start = 0;
-    time = 0;
-    var clear_time = document.getElementById('timer');
-    clearInterval(clear_time);
-    document.getElementById('startPause').innerHTML = 'Start';
-    document.getElementById('timer').innerHTML = '00:00:00:00';
-}
 
-function increment() {
-   if (start == 1) {
-    setTimeout(function() {
-        time++;
-        var hours = Math.floor(time/10/60/60);﻿
-        var minutes = Math.floor( time/10/60);
-        var seconds = Math.floor( time/10%60);
-        var miliseconds = time % 10;
+    function delta() {
+        var now = Date.now();
+        var timePassed = now - offset;
+        offset = now;
+        return timePassed;
+    }
 
-        if (hours < 10) {
+    function timeFormatter (timeInMilliseconds) {
+        
+        var time = new Date(timeInMilliseconds);
+        time.setHours(0);
+        var hours = time.getHours().toString();
+        var minutes = time.getMinutes().toString();
+        var seconds = time.getSeconds().toString();
+        var milliseconds = time.getMilliseconds().toString();
+
+        if (hours.length < 2) {
             hours = '0' + hours;
         }
-        if ( minutes < 10) {
+        if (minutes.length < 2) {
             minutes = '0' + minutes;
         }
-        if (seconds < 10) {
+        if (seconds.length < 2) {
             seconds = '0' + seconds;
         }
+        while (milliseconds.length < 3) {
+            milliseconds = '0' + milliseconds;
+        }
+        return hours + ':' + minutes + ':' + seconds + '.' + milliseconds;
+    }
 
-        document.getElementById('timer').innerHTML = hours + ':' + minutes + ':' + seconds + ':' + '0' + miliseconds;
-        increment();
-    }, 100);
-   } 
+    this.isOn = false;
+
+    this.start = function() {
+        if(!this.isOn) {
+           interval = setInterval(update.bind(this), 10);
+           offset = Date.now();
+           this.isOn = true; 
+        }
+    };
+
+    this.stop = function() {
+        clearInterval(interval);
+        interval = null;
+        this.isOn = false;
+    };
+
+    this.reset = function() {
+        time = 0;
+        update();
+    };
 }
 
+
+var timer = document.getElementById('timer');
+var startStop = document.getElementById('startStop');
+var clear = document.getElementById('clear');
+
+var watch = new StopWatch(timer);
+
+startStop.addEventListener('click', function() {
+    if(watch.isOn) {
+        watch.stop();
+        startStop.textContent = "Start";
+    } else {
+        watch.start();
+        startStop.textContent = "Stop";
+    }
+});
+
+clear.addEventListener('click', function() {
+    watch.reset();
+});

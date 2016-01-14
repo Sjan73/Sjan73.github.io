@@ -23,9 +23,9 @@
 	  -webkit-box-sizing: border-box;
 	    box-sizing: border-box;
 }
-#startPause {
+#startStop{
 	width: 400px;
-	height: 120px;
+	height: 140px;
 	float: left;
 	background-color: #00CC00;
 	font: bold 90px Arial serif;
@@ -39,7 +39,7 @@
 }
 #clear{
 	width: 400px;
-	height: 120px;
+	height: 140px;
 	float: right;
 	background-color: #C00000;
 	font: bold 90px Arial serif;
