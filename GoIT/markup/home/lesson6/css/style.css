@@ -89,13 +89,13 @@ input[type="password"]{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color:#97a2a6;
 	padding-left: 5px;
-	line-height: 16px;
+	line-height: 12px;
 }
 :-moz-placeholder{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color:#97a2a6;
 	padding-left: 5px;
-	line-height: 16px;
+	line-height: 12px;
 } 
 :-ms-input-placeholder{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
