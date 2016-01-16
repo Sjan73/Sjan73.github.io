@@ -20,13 +20,12 @@
 }
 header{
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 }
 .enter-list{
-	padding-top: 20px;
+	padding-top: 24px;
 	padding-bottom: 30px;
 }
-
 .phone img{
   width: 22px;
   height: 21px;
@@ -38,13 +37,14 @@ header{
 .phone li{
 	display: block;
 	float: left;
-	padding-right: 5px;
+	padding-right: 7px;
 }
 .phone li:first-child{
 	padding-left: 5px;
 }
 .phone li:last-child{
-	margin-right: 15px;
+	margin-right: 12px;
+	margin-left: 5px;
 }
 .phone li a{
 	font: 18px Arial, sans-serif;
@@ -72,39 +72,46 @@ header{
 .sign_in input[type="text"],
 input[type="password"]{
 	float: left;
-	width: 117px;
+	width: 113px;
 	height: 15px;
 	margin-top: 4px;
-	margin-right: 7px;
+	margin-right: 4px;
 	border: 1px solid rgb( 155, 161, 163 );
 	background-color: rgb( 255, 255, 255 );
 }
 ::-webkit-input-placeholder{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color:#97a2a6;
-	padding-left: 3px;
+	padding-left: 5px;
+	line-height: 16px;
 }
 ::-moz-placeholder{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color:#97a2a6;
+	padding-left: 5px;
+	line-height: 16px;
 }
 :-moz-placeholder{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color:#97a2a6;
+	padding-left: 5px;
+	line-height: 16px;
 } 
 :-ms-input-placeholder{
 	font: 11px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color:#97a2a6;
+	padding-left: 5px;
+	line-height: 16px;
 }
 .sign_in .enter a{
 	float:left;
-	margin-top: 6px;
-	padding-right: 3px;
+	margin-top: 4px;
+	margin-left: 4px;
 	font: 11px 'Lucida-Sans-Unicode', sans-serif;
 	color: #fff;
 }
 .sign_in .enter a:last-child{
-	margin-right: 5px;
+	margin-right: 15px;
 }
 .sign_in .forgot a{
 	float: left;
@@ -114,12 +121,12 @@ input[type="password"]{
 	font: 12px 'Lucida-Sans-Unicode', sans-serif;
 	color: #bfbfbf;
 	display: block;
-	margin: 5px 0;
+	margin: 4px 0;
 }
 .navi{
 	width: 75px;
 	height: 20px;
-	margin-top: -4px;
+	margin-top: -6px;
 	float: left;
 	position: relative;
 	border: 1px solid #c0c6c9;
@@ -138,6 +145,10 @@ input[type="password"]{
 .navi li a{
 	height: 20px;
     display: block;
+}
+.h-image{
+	display: block;
+	margin-bottom: 5px;
 }
 .home{
 	position: absolute;
@@ -158,15 +169,15 @@ input[type="password"]{
 }
 .nav li{
 	float: left;
-	line-height: 31px;
+	line-height: 36px;
 }
 .nav li a{
 	font: 14px 'Lucida-Sans-Unicode', sans-serif;
 	color: #bfbfbf;
-	padding: 8px 20px;
+	padding: 8px 15px;
 }
 .nav .company{
-	margin-left: 120px;
+	margin-left: 130px;
 }
 .nav li a:hover{
 	background-image: -moz-linear-gradient( -90deg, rgb(32,105,136) 0%, rgb(17,65,101) 59%, rgb(15,58,94) 85%, rgb(12,50,86) 100%);
@@ -180,7 +191,7 @@ input[type="password"]{
 }
 .buy_items li{
 	float:left;
-	line-height: 31px;
+	line-height: 38px;
 }
 .buy_items li:nth-child(3){
 	margin-right: 15px;
@@ -189,7 +200,8 @@ input[type="password"]{
 	margin-right: 10px;
 }
 .buy_items img{
-	margin-right: 5px;
+	margin-right: 4px;
+	margin-top: 10px;
 }
 .font_1{
 	font: 11px Arial, sans-serif;
@@ -202,6 +214,7 @@ input[type="password"]{
  .three_blocks{
  	width: 100%;
  	height: 132px;
+ 	margin: 5px;
 	position: relative;
 } 
 .search_auto{
@@ -216,25 +229,26 @@ input[type="password"]{
 }
 .search_auto span{
 	position: absolute;
-	top: 1px;
-	left: 131px;
+	top: -2px;
+	left: 126px;
 	font: 900 12px Arial, sans-serif;
 	color: #154467;
 }
 .search_auto .search1{
 	position: absolute;
 	bottom: 5px;
-	left: 335px;
+	left: 341px;
 	text-decoration: underline;
 	font: italic 14px Arial, sans-serif;
 	color: #154467;
 }
 .left_block1{
 	float: left;
+	margin-right: 16px;
 }
 .left_block1 span{
 	position: absolute;
-	top: 5px;
+	top: 2px;
 	left: 20px;
 	font: 900 10px Arial, sans-serif;
 	color: #154467;
@@ -277,13 +291,12 @@ input[type="password"]{
 	width: 50px;
 }
 .right_block1{
-	float: right;
-	margin-right: 20px;
+	float: left;
 }
 .right_block1 span{
 	position: absolute;
-	top: 5px;
-	left: 350px;
+	top: 0;
+	left: 354px;
 	font: 900 10px Arial, sans-serif;
 	color: #154467;
 }
@@ -292,7 +305,7 @@ input[type="password"]{
 	float: left;
 	width: 190px;
 	height: 132px;
-	margin-right: 15px;
+	margin-right: 10px;
 	background-color: rgb( 255, 255, 255 );
 	border: 1px solid rgb( 156, 156, 157 );
 	border-radius: 18px;
@@ -300,15 +313,15 @@ input[type="password"]{
 }
 .tires span{
 	position: absolute;
-	top: 5px;
-	left: 10px;
-	font: 900 12px Arial, sans-serif;
+	top: 0;
+	left: 7px;
+	font: 900 11px Arial, sans-serif;
 	color: #114165;
 }
 .tires .search2{
 	position: absolute;
-	bottom: 5px;
-	left: 130px;
+	bottom: 8px;
+	left: 122px;
 	text-decoration: underline;
 	font: italic 14px Arial, sans-serif;
 	color: #154467;
@@ -328,14 +341,14 @@ input[type="password"]{
 	position: static;
 	width: 38px;
 	height: 10px;
-	margin-left: 15px;
+	margin-left: 13px;
 	font: 10px 'Lucida-Sans-Unicode', sans-serif;
 	color: #000;
 }
 .left_block2_row select{
 	width: 50px;
 	float: left;
-	margin-left: 10px;
+	margin: -4px 0 0 6px;
 }
 select.size{
 	margin-left: 0;
@@ -348,23 +361,31 @@ select.size{
 span.slash{
 	width: 5px;
 	font-weight: 600;
-	margin: 0 3px;
+	margin: 0 6px;
 }
 .left_block2_row .season{
-	margin: 0 10px 40px 15px;
+	margin: -6px 9px 28px 13px;
 }
 .season_checkbox{
-	margin: 5px 0 0 0;
+	margin: 0 0 5px -9px;
     height: 10px;
     width: 90px;
     float: left;
+}
+.season_checkbox input{
+	display: block;
+	float: left;
+	margin-top: -2px;
+}
+.season_checkbox label{
+	display: block;
+	margin-top: -5px;
 }
 .left_block2 input[type="checkbox"]+label{
 	font: 12px 'Lucida-Sans-Unicode', sans-serif;
 	color: #000;
 }
 .left_block2 input[type="checkbox"]{
-	margin: 0;
   background-image: -webkit-linear-gradient(left, rgb(32,105,136) 0%, rgb(25,85,119) 30%, rgb(17,65,101) 100%);
   background-image: -o-linear-gradient(left, rgb(32,105,136) 0%, rgb(25,85,119) 30%, rgb(17,65,101) 100%);
   background-image: linear-gradient(to right, rgb(32,105,136) 0%, rgb(25,85,119) 30%, rgb(17,65,101) 100%);
@@ -381,22 +402,22 @@ span.slash{
 }
 .disc span{
 	position: absolute;
-	top: 5px;
-	left: 10px;
-	font: 900 12px Arial, sans-serif;
+	top: 0;
+	left: 7px;
+	font: 900 11px Arial, sans-serif;
 	color: #114165;
 }
 .disc .search3{
 	position: absolute;
-	bottom: 5px;
-	left: 200px;
+	bottom: 8px;
+	left: 197px;
 	text-decoration: underline;
 	font: italic 14px Arial, sans-serif;
 	color: #154467;
 }
 .left_block3{
 	float: left;
-	margin-top: 25px;
+	margin-top: 20px;
 	margin-right: 20px;
 }
 .left_block3:before{
@@ -410,13 +431,13 @@ span.slash{
 }
 .left_block3_row{
 	width: 100%;
-	height: 33px;
+	height: 30px;
 }
 .left_block3_row p{
 	display: block;
 	float: left;
 	width: 76px;
-	height: 30px;
+	height: 20px;
 	margin-left: 15px;
 	font: 10px 'Lucida-Sans-Unicode', sans-serif;
 	color: #000;
@@ -427,7 +448,8 @@ span.slash{
 	color: #77858b;
 }
 p.left_block3_row-p{
-	margin-top: -5px;
+	height: 40px;
+	margin-top: -10px;
 	line-height: 1;
 }
 span.left_block3_row-span{
@@ -447,6 +469,9 @@ span.left_block3_row-span{
 	margin-top: 5px;
 	float: left;
 }
+.left_block3_right_div{
+	margin-bottom: 5px;
+}
 .left_block3_right p{
 	width: 60px;
 	font: 10px 'Lucida-Sans-Unicode', sans-serif;
@@ -464,7 +489,7 @@ p.left_block3_right_p{
 }
 .left_block3_right select{
 	width: 59px;
-	margin: 4px 0;
+	margin: 1px 3px;
 }
 .main{
 	display: block;
@@ -478,30 +503,32 @@ p.left_block3_right_p{
 }
 .catalog {
 	width: 180px;
-  height: 23px;
-  display: block;
-  margin-bottom: 15px;
-  border: 1px solid rgb( 121, 135, 141 );
-  box-shadow: 1.5px 2.598px 3px 0 rgb( 150, 150, 150 );
-  border-radius: 15px;
+  	height: 23px;
+  	display: block;
+  	margin: 5px 0 15px 0;
+  	border: 1px solid rgb( 121, 135, 141 );
+  	box-shadow: 1.5px 2.598px 3px 0 rgb( 150, 150, 150 );
+  	border-radius: 15px;
 }
 .catalog img{
 	float: left;
 	padding: 1px 2px;
+	margin-right: 1px;
 }
 .catalog p{
 	float: left;
-	margin-top: 2px;
+	margin-top: 4px;
 	font: 13px 'Lucida-Sans-Unicode', sans-serif;
 	color: #114165;
 }
 .tires_list{
 	display: block;
 	height: 100%;
+	margin-bottom: -10px;
 }
 .tires_bck{
 	display: block;
-	width: 152px;
+	width: 150px;
     height: 27px;
     margin-bottom: 5px;
  	border: 1px solid rgb( 121, 135, 141 );
@@ -517,40 +544,43 @@ p.left_block3_right_p{
 	font: 14px 'Lucida-Sans-Unicode', sans-serif;
 	color: #114165;
 }
+.disc_list{
+	margin-bottom: -13px;
+}
 .name_list{
-	margin: 5px  0 5px 20px;
+	margin: 0  0 5px 30px;
 }
 .name_list li{
-	width: 6px;
-  height: 6px;
+	width: 4px;
+  	height: 4px;
 	border: 2px solid rgb( 121, 135, 141 );
-  border-radius: 50%;
-  color: rgb( 255, 255, 255 );
-	margin: 15px 5px;
+    border-radius: 50%;
+    color: rgb( 255, 255, 255 );
+	margin: 10px 5px 17px 5px;
 }
 .name_list li a{
 	display:block;
 	width: 130px;
 	height: 20px;
-	margin-left: 14px;
+	margin-left: 9px;
 	margin-top: -7px;
-	font: 14px 'Lucida-Sans-Unicode', sans-serif;
+	font: 13px 'Lucida-Sans-Unicode', sans-serif;
 	color: #465961;
 }
 .name_list li a:hover{
 	font: bold italic 14px Arial, sans-serif;
 	color: #0c3256;
 	text-decoration: underline;
-  margin-left: 25px;
+    margin-left: 15px;
 	-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 			box-sizing: border-box;
 }
 .disc_bck{
 	display: block;
-	width: 152px;
-  height: 27px;
-  margin-bottom: 5px;
+	width: 150px;
+  	height: 27px;
+  	margin-bottom: 5px;
  	border: 1px solid rgb( 121, 135, 141 );
 	border-radius: 15px;
 }
@@ -588,7 +618,8 @@ p.left_block3_right_p{
 	height: 100%;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
 	background-image: -moz-linear-gradient( 90deg, rgb(148,167,176) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(148,167,176) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(148,167,176) 0%, rgb(118,141,151) 57%, rgb(201,207,209) 100%);
@@ -604,9 +635,10 @@ p.left_block3_right_p{
 	width: 140px;
 	height: 180px;
 	text-align: center;
-	margin: 12px 13px 30px;
+	margin: 12px 13px 10px;
 }
 .tires_items_company{
+	margin: 2px 0 -4px -4px;
 	font: 15px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color: #206988;
 }
@@ -615,8 +647,8 @@ p.left_block3_right_p{
 	color: #1f2528;
 }
 .tires_items_image{
-	width: 140px;
-    height: 131px;
+	width: 135px;
+    height: 127px;
     display: table;
     background-color: rgb( 255, 255, 255 );
     border: 1px solid rgb( 164, 174, 177 );
@@ -631,7 +663,7 @@ p.left_block3_right_p{
 	max-width: 136px;
 }
 .tires_items_price{
-	margin: 5px 0 0 0;
+	margin: 4px 0 0 4px;
 	font: bold italic 16px Arial, sans-serif;
 	color: #114165;
 }
@@ -645,7 +677,7 @@ p.left_block3_right_p{
 }
 .tires_bck2{
 	display: block;
-	width: 152px;
+	width: 134px;
     height: 27px;
     margin-bottom: 5px;
     margin-left: 15px;
@@ -664,7 +696,7 @@ p.left_block3_right_p{
 }
 .disc_bck2{
 	display: block;
-	width: 152px;
+	width: 134px;
     height: 27px;
     margin-bottom: 5px;
     margin-left: 15px;
@@ -695,14 +727,17 @@ p.left_block3_right_p{
 	width: 100%;
 	position: relative;
 	margin: 8px 0 10px;
-	padding: 0 0 0 50px;
+	padding: 0 0 0 20px;
 	font: 13px 'Lucida-Sans-Unicode', Arial, sans-serif;
 	color: #465961;
 }
-.checkbox_brand input[type="checkbox"]{
-	position: absolute;
-	top: 1;
-	left: 20px;
+.checkbox_brand_list input{
+	display: block;
+	float: left; 
+	margin-right: 11px;
+}
+.checkbox_brand_list {
+	height: 22px;
 }
 .select{
 	display: block;
@@ -726,7 +761,7 @@ input[type="submit"]{
 	width: 100%;
 	box-sizing: border-box;
    	min-height: 100%;
-  	padding-bottom: 110px;
+  	padding-bottom: 102px;
     margin: 0px 0 20px;
     text-align: center;
 }
@@ -750,7 +785,7 @@ input[type="submit"]{
 .footer ul li{
 	display: inline;
 	color: #bec6c9;
-	padding: 0 6px;
+	padding: 0 4px;
 }
 .footer ul li a{
 	font: 12px Arial, sans-serif;
@@ -760,7 +795,7 @@ input[type="submit"]{
 	font: 12px Arial, sans-serif;
 	color: #52abcb;
 }
-.footer{
+.footer p{
 	font: 10px Arial, sans-serif;
 	color: #7f4740;
 }
