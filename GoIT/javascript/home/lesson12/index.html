@@ -13,35 +13,32 @@
 	
 	<script type='text/html' id='resume'>
 
-	<div class='container'>
-		<div class='photo'>
-			<h3><%= data.userName%></h3>
-			<img src="img/<%= data.url%>" alt="Andrii Palas">
+	<div class="container">
+		<div class=<%= divClass%>>
+			<h3><%= userName%></h3>
+			<img src="img/<%= url%>" alt="Andrii Palas">
 		</div>
-		<div class='workExperience'>
-			<h4>Досвід роботи</h4>
-
+		<div class=<%= divClass_2%>>
+		 	<h4>Досвід роботи</h4>
 			<p>2011 – 2015 – Компанія Ай-сі-дж Україна, посада – програміст. Обов’язки: створення баз даних, навчання персоналу та технічне обслуговування програм.</p>
-
-			<p>2007- 2011 – фрілансер, обов’язки: контент-менеджер, рерайтер та копірайтер .
-			'https://www.fl.ru/users/SJAN73/'</p>
+		 	<p>2007- 2011 – фрілансер, обов’язки: контент-менеджер, рерайтер та копірайтер.</p>
 		</div>
-		<div class='education'>
-			<h4>Освіта</h4>
+		<div class=<%= divClass_2%>>
+		 	<h4>Освіта</h4>
 			<p>Вересень – листопад  2014 – курси FrontEnd (HTML, CSS, JavaScript)</p>
 			<p>2007-2013 Національний університет Львівська Політехніка, спеціальність – інформаційні технології проектування, кваліфікація – професіонал з обчислювальних систем, диплом - спеціаліста.</p>
-		</div>
-		<div class='contacts'>
+		 </div>
+		<div class=<%= divClass_2%>>
 			<h4>Контактні дані:</h4>
 			<ul>
-				<li><%= data.mob%></li>
-				<li>Email: <a href="https://mail.google.com"><%= data.email%></a></li>
-				<li>Facebook: <a href="https://www.facebook.com/andrew.palace.3"><%= data.facebook%></a></li>
+				<li><%= mob%></li>
+				<li>Email: <a href="https://mail.google.com"><%= email%></a></li>
+				<li>Facebook: <a href="https://www.facebook.com/andrew.palace.3"><%= facebook%></a></li>
 			</ul>		
 		</div>
 		<div>
-			<p><span class='hobby'>Хобі:</span> футбол, піше мандрівництво, теніс, скелелазіння. </p>
-		</div>
+		 	<p><span class="hobby">Хобі:</span> футбол, піше мандрівництво, теніс, скелелазіння. </p>
+		 </div>
     </div>
 		
 	</script>
