@@ -1,10 +1,25 @@
  $(document).ready(function() {
-        $( '.li_dropdown' ).hover(
+        $( '.dropdown' ).hover(
             function(){
-                $(this).children('.ul_submenu').slideDown(200);
+                $(this).children('.submenu').slideDown(200);
             },
             function(){
-                $(this).children('.ul_submenu').slideUp(200);
+                $(this).children('.submenu').slideUp(200);
             }
         );
- });
+
+$("a").mouseenter(
+  function () {
+	$(this).animate({
+		color: "#000"
+    }, 500 );
+});
+
+
+$("a").mouseleave(function() {
+	$(this).animate({
+		color: "#fff"
+    }, 500 );
+});
+
+});

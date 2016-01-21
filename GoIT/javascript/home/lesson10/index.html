@@ -6,7 +6,7 @@
 	<title>Slide Down Menu</title>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src='js/script.js'></script>
+	<script src='js/jquery.color.js'></script>
 </head>
 <body>
 
@@ -14,15 +14,23 @@
 	<ul class='nav'>
 		<li><a href="#">Nav 1</a></li>
 		<li><a href="#">Nav 2</a></li>
-		<li class="arrow-down li_dropdown"><a href="#">Nav 3</a>
-			<ul class='dropdown ul_submenu'>
+		<li class="arrow-down dropdown"><a href="#">Nav 3</a>
+			<ul class='submenu'>
 				<li><a href="#">Nav 3.1</a></li>
 				<li><a href="#">Nav 3.2</a></li>
-				<li class='arrow-right li_dropdown'><a href="#">Nav 3.3</a>
-					<ul class='submenu ul_submenu'>
+				<li class='arrow-right dropdown'><a href="#">Nav 3.3</a>
+					<ul class='submenu'>
 						<li><a href="#">Nav 3.1.1</a></li>
 						<li><a href="#">Nav 3.2.2</a></li>
-						<li><a href="#">Nav 3.3.3</a></li>
+						<li class='arrow-right dropdown'><a href="#">Nav 3.3.3</a>
+							<ul class='submenu'>
+								<li><a href="#">Nav 4.1.1</a></li>
+								<li><a href="#">Nav 4.2.2</a></li>
+								<li><a href="#">Nav 4.3.3</a></li>
+								<li><a href="#">Nav 4.4.4</a></li>
+								<li><a href="#">Nav 4.5.5</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Nav 3.4.4</a></li>
 						<li><a href="#">Nav 3.4.5</a></li>
 					</ul>
@@ -36,5 +44,6 @@
 	</ul>
 </div>	
 
+<script src='js/script.js'></script>
 </body>
 </html>

@@ -4,9 +4,13 @@
 }
 a{
 	text-decoration: none;
+	color: #fff;
 }
 li{
 	list-style: none;
+}
+div{
+	background-color: #0099CC;
 }
 .wrapper{
 	width: 960px;
@@ -20,32 +24,32 @@ li{
 .nav li{
 	width: 150px;
 	height: 40px;
+	line-height: 40px;
 	float: left;
 	position: relative;
 	padding: 0;
 	margin: 0;
-	background: #0099CC;
+	background-color: #0099CC;
 	text-align: center;
-	padding-top: 14px;
 }
-.nav li:hover{
-	background: #F0F0F0 ;
-}
+/*.nav li:hover{
+	background-color: #F0F0F0;
+}*/
 .nav li a {
 	width: 150px;
-	height: 30px;
+	padding: 10px 0;
 	display: block;
 	font: 800 14px Arial, sans-serif;
-	color: #fff;
+	
 }
-.nav li:hover > a{
+/*.nav li:hover > a{
 	color: #000;
-}
+}*/
 .arrow-down:after{
 	content: "";
 	display: block;
 	position: absolute;
-	top: 22px;
+	top: 19px;
 	left: 100px;
 	width: 8px;
 	height: 6px;
@@ -55,7 +59,7 @@ li{
 	content: "";
 	display: block;
 	position: absolute;
-	top: 20px;
+	top: 16px;
 	left: 135px;
 	width: 4px;
 	height: 8px;
@@ -63,23 +67,25 @@ li{
 }
 .dropdown{
 	width: 150px;
-	display: none;
 	padding: 0;
 	margin: 0;
-    position: absolute;
-	left: 0;
-	top: 52px;
+	position: relative;
 }
 .dropdown li{
 	width: 150px;	
-	height: 42px;
 	float: none;
 	margin: 0;
 }
 .submenu{
-	display: none;	
+	display: none;
 }
 .submenu li{
+	position: relative;
+	margin: 0;
+}
+.submenu li ul{
+	position: absolute;
+	top: 0px;
 	left: 150px;
-	top: -44px;
+	margin: 0;
 }
