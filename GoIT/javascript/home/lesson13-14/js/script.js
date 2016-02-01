@@ -39,7 +39,7 @@ $(function() {
 
     var html = $('#testing').html();
 	var content = tmpl(html, {
-		data: questions
+		data: actualTest
 		});
 
     $('.js-test').append(content);
@@ -55,7 +55,7 @@ function checkAnswer(e) {
     
     for (var i = 0; i < actualTest.length; i++) {
         
-   		var inputs = $('.form-group'+ i + 'input:checkbox');
+   		var inputs = $('.box'+ i + 'input:checkbox');
    		   		
     	var userAnswered = {};
    			for (var k = 0; k < inputs.length; k++) { 
@@ -71,36 +71,48 @@ function checkAnswer(e) {
         		userAnswered[k]=true;
         		};
 		};
-		
         user.push(userAnswered);
 	};
 
-  		var modal;
-  		var $body = $( 'body' );
 
-	for (var i = 0; i < actualTest.length; i++) {
+	function modalWindow () {
 
-    	var inputs = $('.form-group' + i +' input:checkbox');
-    	var inputsShowResult =  $('.mymodal .form-group' + i + 'input:checkbox');
-
-  		for (var k = 0; k < actualTest[i].answer.length; k++) {
+		for (var i = 0; i < actualTest.length; i++) {
+    			var inputs = $('.box' + i +' input:checkbox');
+    			
+    			for (var k = 0; k < actualTest[i].answer.length; k++) {
     				
-    		var checked = inputs[k].checked;	
+    				var checked = inputs[k].checked;
 
-  		if (checked == true) {
-
-    		modal = ('<div class="mymodal"><div class="mymodal-inner"><h1 class="text-center">All correct!</h1><a class="center-block btn btn-primary" id="exit">Exit</a></div></div>');
-
-  		} else {
-
-    		modal = ('<div class="mymodal" id="mm"><div class="mymodal-inner"><h1 class="text-center">You were wrong!</h1><a class="center-block btn btn-primary" id="exit">Exit</a></div></div>');
-
-  		}
+		if ((checked == true)) {
+			if ((user[i][k]) == true) {
+				var $modal = ('<div class="myModal"><div class="mymodal-inner"><h1 class="text-center">All correct!</h1><button class="center-block btn btn-primary btn-lg" id="exit">Exit</button></div></div>');
+			} else {
+				var $modal = ('<div class="myModal"><div class="mymodal-inner"><h1 class="text-center">Your answers is incorrect</h1><button class="center-block btn btn-primary btn-lg" id="exit">Exit</button></div></div>');
+			}
+		}
+		console.log(();
 	}
-	};
+	}
 
-  $body.append(modal);
+		$('body').append($modal);
+
+		var $exit = $( '#exit' );
+
+		var reset = function() {
+			$( 'input:checkbox' ).prop( 'checked', false ).prop( 'disabled', false );
+    		var $modalWndw = $( '.myModal' );
+    		$modalWndw.remove();
+
+  			return false;
+  		};
+
+  	$exit.on( 'click', reset );
+		
+	}
+	
+  	  modalWindow();
 };	
 
-$('.check_answers').on('click', checkAnswer);
+$('.check').on('click', checkAnswer);
 });	

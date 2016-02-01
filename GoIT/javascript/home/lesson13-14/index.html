@@ -16,14 +16,16 @@
 		<h1 class="text-center">Programming test</h1>
 		<div class="js-test">
 		</div>
-		<a href="" class="btn btn-primary btn-lg" id="check_answers">Check my results!</a>
+		<div class="submit">
+			   	<button type="submit" class="btn btn-primary btn-lg check">Check my results!</button> 
+		</div>
 	</div>
 	
 	<script type='text/html' id='testing'>
 		
 		<% for (var i = 0; i < data.length; i++) { %>
 			
-			<div class="form-group<%=i%>">
+			<div class="box<%=i%>">
              	<h3><%= data[i].question %></h3>
              	   	<% for (var k =0; k<data[i].answer.length; k++) { %>
 						<div class="checkbox">
