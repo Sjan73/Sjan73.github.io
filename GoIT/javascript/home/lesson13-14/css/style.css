@@ -20,16 +20,12 @@ form a {
 .mymodal-inner {
     position: absolute;
     width: 50%;
-    height: 50%;
+    height: 25%;
     top: 25%;
     left: 25%;
     background-color: white;
     border: 2px solid grey;
 }
-
-.mymodal-inner a {
-    width: 12%;
-    position: absolute;
-    left: 44%;
-    bottom: 15px;
+button{
+    outline: none;
 }

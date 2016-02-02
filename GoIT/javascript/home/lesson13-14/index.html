@@ -25,16 +25,14 @@
 		
 		<% for (var i = 0; i < data.length; i++) { %>
 			
-			<div class="box<%=i%>">
-             	<h3><%= data[i].question %></h3>
-             	   	<% for (var k =0; k<data[i].answer.length; k++) { %>
-						<div class="checkbox">
-			    			<label><input type="checkbox"><%=data[i].answer[k]%></label>	
-						</div>
-					<%}; %> 
-            </div>	
+			<h3><%= data[i].question %></h3>
+			<div class="form-group">
+                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>a1"><%= data[i].answers[0].answer %></label>
+                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>a2"><%= data[i].answers[1].answer %></label>
+                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>a3"><%= data[i].answers[2].answer %></label>
+            </div>           	
 		<% } %>
 	</script>
-		
+
 </body>
 </html>
