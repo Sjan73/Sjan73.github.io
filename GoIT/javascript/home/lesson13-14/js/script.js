@@ -109,12 +109,14 @@ function checkAnswer(e) {
   };
 
   var answered = 0;
+  var rightAnswers1 = 0;
 
   var check = function () {
 
     for (var i = 0; i < rightAnswers.length; i++) {
 
       if ( rightAnswers[i] === true ) {
+        rightAnswers1++;
 
         if ( rightAnswers[i] === givenAnswers[i] ) {
           answered++;
@@ -122,6 +124,9 @@ function checkAnswer(e) {
 
       }
     }
+    console.log(rightAnswers1);
+    console.log(answered);
+    return rightAnswers1 === answered;
   };
 
  getRightAnswers();
@@ -135,7 +140,7 @@ function checkAnswer(e) {
 
 	function modalWindow () {
 
-			if (check) {
+			if (check()) {
 				var $modal = ('<div class="myModal"><div class="mymodal-inner"><h1 class="text-center">All correct!</h1><button class="center-block btn btn-primary btn-lg" id="exit">Exit</button></div></div>');
 			} else {
 				var $modal = ('<div class="myModal"><div class="mymodal-inner"><h1 class="text-center">Your answers is incorrect</h1><button class="center-block btn btn-primary btn-lg" id="exit">Exit</button></div></div>');
