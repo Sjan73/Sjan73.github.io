@@ -21,6 +21,8 @@ a:visited{
 	margin: 0 auto;
 }
 .google{
+	width: 269px;
+	height: 95px; 
 	display: block;
 	margin: 100px auto 0;
 }

@@ -1,78 +1,78 @@
 $(function() {
 
-	var $search = $('.search');
+    var $search = $('.search');
 
-	var $ajaxSearch = function(a) {
-		var $inputText = $('.search_text');
-		var $wrapper = $('.wrapper');
+    var $ajaxSearch = function(a) {
+        var $inputText = $('.search_text');
+        var $wrapper = $('.wrapper');
 
-		 $.ajax({
-		 	url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=8&start=' + a*8 + '&q='+ encodeURIComponent($inputText.val()) + '&callback=GoogleCallback&context=?',
-		 	dataType: "jsonp",
-		 	success: function(data) {
+        $.ajax({
+            url: 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=8&start=' + a * 8 + '&q=' + encodeURIComponent($inputText.val()) + '&callback=GoogleCallback&context=?',
+            dataType: "jsonp",
+            success: function(data) {
 
-		 		var result = document.createElement('div');
-            	result.classList.add('result');
-            	var ul = document.createElement('ul');
+                var result = document.createElement('div');
+                result.classList.add('result');
+                var ul = document.createElement('ul');
 
-            	var page_nav = document.createElement('div');
-            	page_nav.classList.add('page_nav');
-            	var page_nav_list = document.createElement('p');
-            	page_nav_list.classList.add('page_nav_list');
+                var page_nav = document.createElement('div');
+                page_nav.classList.add('page_nav');
+                var page_nav_list = document.createElement('p');
+                page_nav_list.classList.add('page_nav_list');
 
-            	for (i = 0; i < 10; i++) {
-                	page_nav_list.innerHTML += '<a href="#" class="page-list">' + (i+1) + '</a>';
-            	}
-            	page_nav_list.innerHTML += '<a href="#" class="page-next">Next</a>';
+                for (i = 0; i < 10; i++) {
+                    page_nav_list.innerHTML += '<a href="#" class="page-list">' + (i + 1) + '</a>';
+                }
+                page_nav_list.innerHTML += '<a href="#" class="page-next">Next</a>';
 
-            	$.each(data.results, function(i, val) {
+                $.each(data.results, function(i, val) {
 
-                	var li = document.createElement('li');
-                	li.innerHTML = ('<h3><a href="' + val.url + '">' + val.title + '</a></h3><p class="visibleURL">' + val.visibleUrl + '</p><p class="content">' + val.content + '</p>');
-                	ul.appendChild(li);
-            	});
+                    var li = document.createElement('li');
+                    li.innerHTML = ('<h3><a href="' + val.url + '">' + val.title + '</a></h3><p class="visibleURL">' + val.visibleUrl + '</p><p class="content">' + val.content + '</p>');
+                    ul.appendChild(li);
+                });
 
-            	$wrapper.append(result);
-            	result.appendChild(ul);
-            	result.appendChild(page_nav);
-            	page_nav.appendChild(page_nav_list);	
+                $wrapper.append(result);
+                result.appendChild(ul);
+                result.appendChild(page_nav);
+                page_nav.appendChild(page_nav_list);
 
-            	var setAnchors = function(a) {
+                var setAnchors = function(a) {
 
-                	$anchors = $('.page-list');
-                		$.each($anchors, function(i) {
-                    		$anchors[i].addEventListener('click', function(e) {
-                       			e.preventDefault();
-                       			$ajaxSearch(i);
-                   			 });	
-                		});
+                    $anchors = $('.page-list');
+                    $.each($anchors, function(i) {
+                        $anchors[i].addEventListener('click', function(e) {
+                            e.preventDefault();
+                            $ajaxSearch(i);
+                        });
+                    });
 
-                	$('.page-next')[0].addEventListener('click', function(e) {
-                    	e.preventDefault();
-                    	$ajaxSearch(a+1);
-                	});
+                    $('.page-next')[0].addEventListener('click', function(e) {
+                        e.preventDefault();
+                        $ajaxSearch(a + 1);
+                    });
 
-               		 $anchors[a].classList.add('active');
-            	};
+                    $anchors[a].classList.add('active');
+                };
 
-            		setAnchors(a);
+                setAnchors(a);
 
-		 		}
-		 });
-		$('.result').remove();
-	};
-	
+            }
+        });
+        $('.result').remove();
+    };
 
-	$search.submit(function(e) {
 
-    	e.preventDefault();
+    $search.submit(function(e) {
 
-    	$ajaxSearch(0);
-	});	 
+        e.preventDefault();
+
+        $ajaxSearch(0);
+    });
 });
 
 
-function GoogleCallback (func, data) {
+function GoogleCallback(func, data) {
     window[func](data);
 }
 
@@ -81,44 +81,48 @@ function GoogleCallback (func, data) {
 
 
 var human = {
-	name: 'Andrii',
-	age: 25,
-	sex: 'male',
-	growth: 176,
-	weight: 70
+    name: 'Andrii',
+    age: 25,
+    sex: 'male',
+    growth: 176,
+    weight: 70
 };
 
-var worker = {
-	workPlace: "President",
-	salary: 25000,
-	work: function() {
-		alert('I spend your money!');
-	}
+function Worker() {
+    this.workPlace = "President";
+    this.salary = 25000;
+    this.work = function() {
+        alert('I spend your money!');
+    }
 };
 
-var student = {
-	studyPlace: 'GoIT',
-	stipend: 2500,
-	watchTV: function() {
-		alert('The Walking Dead :)');
-	}
+function Student() {
+    this.studyPlace = 'GoIT';
+    this.stipend = 2500;
+    this.watchTV = function() {
+        alert('The Walking Dead :)');
+    }
 };
 
-worker.__proto__ = human;
-student.__proto__ = human;
+var newWorker = new Worker();
+var newStudent = new Student();
 
-var Ihor = Object.create(student);
+newWorker.__proto__ = human;
+newStudent.__proto__ = human;
+
+var Ihor = Object.create(newStudent);
 Ihor.name = 'Ihor';
 Ihor.age = 30;
 Ihor.weight = 80;
 
-var Oleg = Object.create(worker);
+var Oleg = Object.create(newWorker);
 Oleg.name = 'Oleg';
 Oleg.salary = 5000;
 Oleg.hobby = 'Football';
 
 console.log('human', human);
-console.log('student ', student);
-console.log('worker ', worker);
-console.log(Ihor.name + ' study in ' + Ihor.studyPlace +  ' have ' + Ihor.sex + ' and growth: ' + Ihor.growth + 'cm');
-console.log(Oleg.name + ' spend ' + Oleg.salary +  ' per month and have hobby ' + Oleg.hobby + ' and weight: ' + Oleg.weight + 'kg');
+console.log('student ', newStudent);
+console.log('worker ', newWorker);
+console.log(Ihor.name + ' study in ' + Ihor.studyPlace + ' have ' + Ihor.sex + ' and growth: ' + Ihor.growth + 'cm');
+console.log(Oleg.name + ' spend ' + Oleg.salary + ' per month and have hobby ' + Oleg.hobby + ' and weight: ' + Oleg.weight + 'kg');
+Ihor.watchTV();
