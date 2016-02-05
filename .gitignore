@@ -220,6 +220,7 @@ node_modules/
 *.txt
 *.md
 *.json
-css/src
-js/libs
-js/src
+src/
+libs/
+
+
