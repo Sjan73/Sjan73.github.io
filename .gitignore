@@ -222,5 +222,6 @@ node_modules/
 *.json
 src/
 libs/
+/Gruntfile.js
 
 
