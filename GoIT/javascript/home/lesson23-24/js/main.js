@@ -19,16 +19,15 @@ require(
 	],
 	function(tmpl, Model, View, Controller, $) {
 		console.log('$:', $);
-		// console.log(model);
-		// console.log(view);
-		// console.log(controller);
-		
+			
 		$(function () {
 			var firstToDoList = ['Iphone4', 'Iphone4S', 'Iphone5', 'Iphone5S', 'Iphone6'];
 			var newModel = new Model(firstToDoList);
 			console.log('newModel: ', newModel);
 			var newView = new View(newModel);
+			console.log('newView: ', newView);
 			var newController = new Controller(newModel, newView);
+			console.log('newController: ', newController);
 		});
 
 	}

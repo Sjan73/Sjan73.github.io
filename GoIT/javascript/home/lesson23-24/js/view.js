@@ -24,7 +24,6 @@ define (
 			};
 			init();
 		}
-
 		return View
 	}
 );

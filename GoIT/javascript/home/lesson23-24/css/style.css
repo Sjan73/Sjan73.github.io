@@ -20,8 +20,12 @@ a {
 	color: #ccc;
 	list-style-type: circle;
 }
-.item__list:hover {
-	color: #09f;
+// .item__list:hover {
+// 	color: #09f;
+// }
+.item__delete {
+	margin-left: 20px;
+	cursor: pointer;
 }
 .item__value {
 	width: 270px;
