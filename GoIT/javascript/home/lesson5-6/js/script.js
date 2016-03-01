@@ -5,7 +5,7 @@ function StopWatch(el) {
 
     function update() {
         if (this.isOn) {
-           time += delta();  
+           time += delta();
         }
         var formattedTime = timeFormatter(time);
         el.textContent = formattedTime;
@@ -48,7 +48,7 @@ function StopWatch(el) {
         if(!this.isOn) {
            interval = setInterval(update.bind(this), 10);
            offset = Date.now();
-           this.isOn = true; 
+           this.isOn = true;
         }
     };
 

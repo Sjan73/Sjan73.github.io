@@ -277,10 +277,21 @@ var data = [
 var sendTolocal = JSON.stringify(data);
 var parsed = JSON.parse(sendTolocal);
 
+// Skills
 var skills = _.map(parsed, 'skills');
-
 var mainArray = _.flatten(skills);
-console.log(mainArray);
-
-var sortArray = _.sortBy(mainArray);
+var sortArray = _.sortBy(_.uniq(mainArray), _.toLower);
 console.log('Sorted array: ' + sortArray);
+
+// Names
+  data = _.uniqWith(data, _.isEqual);
+  data = _.sortBy(data, ['friends']);
+  var names = _.map(data, 'name');
+  console.log('Array of name sorted of friends: ', names);
+
+// Friends
+var allFriends = _.map(parsed, 'friends'); 
+    allFriends = _.flatten(allFriends);
+    allFriends = _.map(allFriends, 'name');
+    allFriends = _.union(allFriends, 'name');
+console.log('Sorted friends: ' + allFriends);
