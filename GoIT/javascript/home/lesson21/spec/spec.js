@@ -1,13 +1,40 @@
-var checkAnswer = require('../js/script.js');
+var app = require('../js/script.js');
 
-describe("Check answer", function() {
-  it("Check right and user answwer", function() {
-    // prepare
-    	var answered = 0;
-        var rightAnswers1 = 0;
-    //act
-    	rightAnswers1 === answered;
-    //assert
-      	expect(check).toBe(true);
+describe("App", function() {
+  it("Pow x to n", function() {
+  	//prepare
+  		var result;
+  	
+  	//act 
+  		result = app.pow(4, 4);
+
+  	//assert
+  	   expect(result).toEqual(256);
+  });
+
+  it("User name to log in", function() {
+  	//prepare
+  		var result, arr, arrName;
+  	
+  	//act 
+  		result = app.log(arr);
+
+  		beforeEach(function() {
+    		arrName = 'Andrew';
+ 		 });
+
+  	//assert
+  	   expect(result).toEqual(arrName);
+  });
+
+  it("Data type value", function() {
+  	//prepare
+  		var result, a;
+  	
+  	//act 
+  		result = app.dataTypeValue(a);
+
+  	//assert
+  	   expect(result).toEqual(true);
   });
 });
