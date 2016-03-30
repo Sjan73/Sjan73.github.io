@@ -20,7 +20,10 @@
 
 	<script type="text/template" id="list_template">
 		<% for (var i = 0; i < data.length; i++) { %>
-			<li class="item__list"><%= data[i] %><img src="img/cancel.png" data-value="<%= data[i] %>"  alt="Cancel" class="item__delete"></li>
+		<div class="block">
+			<li class="item__list" contenteditable><%= data[i] %></li>
+			<img src="img/cancel.png" data-value="<%= data[i] %>"  alt="Cancel" class="item__delete">
+		</div>	
 		<% } %>
 	</script>
 
