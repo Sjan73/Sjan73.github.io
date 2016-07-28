@@ -1,0 +1,12 @@
+.wrapper {
+	width: 100%;
+	height: 100%;
+    position: absolute;
+    top: 50px; 
+    left: 50px;
+	overflow-y: scroll !important;
+}
+.wrapper iframe {
+	width: 50%;	
+	height: 50%;
+}
